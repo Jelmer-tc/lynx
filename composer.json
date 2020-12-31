@@ -1,0 +1,32 @@
+{
+    "name": "teamcreative/lynx",
+    "description": "Adds a FieldType for 'links(s)'",
+    "version": "1.0.0",
+    "type": "craft-plugin",
+    "keywords": ["teamcreative", "FieldType", "link", "links", "button", "buttons"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TeamCreative",
+            "homepage": "https://teamcreative.nl"
+        }
+    ],
+    "support": {
+        "email": "info@teamcreative.nl",
+        "issues": "https://https://github.com/Jelmer-tc/lynx/issues",
+        "source": "https://github.com/Jelmer-tc/lynx",
+        "docs": "https://github.com/Jelmer-tc/lynx"
+    },
+    "require": {
+        "craftcms/cms": "^3.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "namespace\\prefix\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Lynx",
+        "handle": "lynx"
+    }
+}
