@@ -1,0 +1,7 @@
+{% import "_includes/forms" as forms %}
+{% set name = "Test" %}
+
+{{ forms.select({
+    id: name~'-Type',
+    name: name~'[type]',
+}) }}

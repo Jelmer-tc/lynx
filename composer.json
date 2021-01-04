@@ -22,11 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "namespace\\prefix\\": "src/"
+            "lynx\\": "src/"
         }
     },
     "extra": {
         "name": "Lynx",
-        "handle": "lynx"
+        "handle": "lynx",
+        "class": "lynx\\Lynx"
     }
 }
