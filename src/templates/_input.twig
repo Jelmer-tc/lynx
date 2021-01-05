@@ -1,7 +1,10 @@
 {% import "_includes/forms" as forms %}
-{% set name = "Test" %}
 
-{{ forms.select({
-    id: name~'-Type',
-    name: name~'[type]',
-}) }}
+{% for item in lynx %}
+    {{ forms.select( item.typeSelectSettings ) }}
+    {{ forms.elementSelect( item.entrySelectSettings ) }}
+    {{ forms.textField( item.textInputSettings ) }}
+    {{ forms.textField( item.titleInputSettings ) }}
+    {{ forms.textField( item.urlInputSettings ) }}
+    {{ forms.checkboxField( item.targetCheckboxSettings ) }}
+{% endfor %}
